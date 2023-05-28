@@ -1,0 +1,152 @@
+@media (max-width: 1023px) {
+    :root { 
+        --header-height: 70px;
+        --header-top-height: 60px;
+    }
+
+    .header{
+        position: absolute;
+    }
+
+.hide-on-mobile-tablet{
+    display: none !important
+}
+
+
+.header-mobile-menu{
+    display: inline-block;
+}
+
+.header-logo{
+    justify-content: center;
+}
+
+#home-slider img {
+    width: 100%;
+   object-fit: contain;
+}
+
+.footer-section-logo{
+    width: 100%;
+}
+
+
+}
+
+
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none !important
+    }
+    .header-right{
+        padding-right: 0;
+    }
+    
+    .header-cart-wrap{
+        margin-right: 22px;
+    }
+    .header-logo img{
+        width: 100%;
+    }
+
+    .header-cart-list{
+        right: -22px;
+        width: 100vw;;
+        max-width: 400px;
+    }
+
+    .header-cart-wrap:focus .header-cart-list{
+        display: block;
+    }
+
+    .price{
+        min-height: 42px;
+        align-items: flex-end;
+    }
+
+    /* Cart table handling */
+
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    .cart-table td { 
+		/* Behave  like a "row" */
+		/* border: none;
+		border-bottom: 1px solid #eee;  */
+		position: relative;
+		text-align: right; 
+	}
+    td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 10px;
+		left: 10px;
+		width: 45%; 
+		white-space: nowrap;
+        text-align: left;
+	}
+
+    .cart-product-quantity-wrap{
+        justify-content: flex-end;
+    }
+
+    .cart-product-info-row{
+        text-align: center;
+    }
+
+    td:nth-of-type(1):before, 
+    td:nth-of-type(3):before,
+    td:nth-of-type(4):before,
+    td:nth-of-type(5):before { 
+        content: attr(data-label); 
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .footer-section{
+        height: unset;
+    }
+
+    .footer-content .row{
+        min-height: unset;
+    }
+
+	.footer-section-title::after {
+        display: none;
+    }
+
+    .footer-section-detail{
+        display: none;
+    }
+    .footer-section-logo{
+        display: none !important;
+    }
+
+    .footer-section-title img{
+        max-width: 50%;
+        padding-bottom: 10px;
+    }
+
+    .footer-section-title p{
+        font-size: 13px;
+        font-weight: 500;
+        color: #ed6723;
+    }
+
+    .footer-mobile-arrow-down {
+        display: inline-block;
+    }
+
+    .footer-section-item{
+        font-size: 13px;
+    }
+}
+

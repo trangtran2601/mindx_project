@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">   
     <link rel="stylesheet" href="./asset/CSS/main.css">
+    <link rel="stylesheet" href="./asset/CSS/cart-page.css">
     <link rel="stylesheet" href="./asset/CSS/responsive.css">
-   
 </head>
 <body>
     <div class="app">
@@ -313,270 +313,192 @@
             </div>
         </header>
         <div class="app_container">
-            <!-- Phần slider/hero -->
-            <section id="home-slider">
-                <a href="">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="//theme.hstatic.net/200000044142/1000773248/14/mob_big_banner_index.png?v=12034">
-                        <source media="(min-width: 769px)" srcset="//theme.hstatic.net/200000044142/1000773248/14/big_banner_index.png?v=12034">
-                        <img class="lazy" data-src="//theme.hstatic.net/200000044142/1000773248/14/big_banner_index.png?v=12034" alt="Umind">
-                    </picture>
-                </a>
-            </section>
-            <!-- Phần danh mục sản phẩm -->
-            <section id="home-category" class="mt-5 mb-5">
-                <div class="container">
-                   <div class="row"> 
-                        <div class="category-item col-4 col-md-4 col-xl-2">
-                            <a class="category-item-img">
-                                <img src="//theme.hstatic.net/200000044142/1000773248/14/collection2_1.png?v=12022" alt="" class="">
-                            </a>
-                            <p class="category-item-name mt-3">Phòng khách</p>
-                        </div>
-                        <div class="category-item col-4 col-md-4 col-xl-2">
-                            <a class="category-item-img">
-                                <img src="//theme.hstatic.net/200000044142/1000773248/14/collection2_2.png?v=12022" alt="" class="">
-                            </a>
-                            <p class="category-item-name mt-3">Phòng ngủ</p>
-                        </div>
-                        <div class="category-item col-4 col-md-4 col-xl-2">
-                            <a class="category-item-img">
-                                <img src="//theme.hstatic.net/200000044142/1000773248/14/collection2_3.png?v=12022" alt="" class="">
-                            </a>
-                            <p class="category-item-name mt-3">Phòng bếp</p>
-                        </div>
-                        <div class="category-item col-4 col-md-4 col-xl-2">
-                            <a class="category-item-img">
-                                <img src="//theme.hstatic.net/200000044142/1000773248/14/collection2_4.png?v=12022" alt="" class="">
-                            </a>
-                            <p class="category-item-name mt-3">Hành lang</p>
-                        </div>
-                        <div class="category-item col-4 col-md-4 col-xl-2">
-                            <a class="category-item-img">
-                                <img src="//theme.hstatic.net/200000044142/1000773248/14/collection2_5.png?v=12022" alt="" class="">
-                            </a>
-                            <p class="category-item-name mt-3">Phòng làm việc</p>
-                        </div>
-                        <div class="category-item col-4 col-md-4 col-xl-2">
-                            <a class="category-item-img">
-                                <img src="//theme.hstatic.net/200000044142/1000773248/14/collection2_6.png?v=12022" alt="" class="">
-                            </a>
-                            <p class="category-item-name mt-3">Trang trí nhà cửa</p>
-                        </div>
-                   </div>
-                </div>
-            </section>
-            <!-- Phần sản phẩm tiêu biểu -->
-            <section id="home-featured-products">
-                <div class="container">
-                    <div class="title-bar">
-                        <div class="title">SẢN PHẨM TIÊU BIỂU</div>
-                    </div>
-                    <div class="productsCard row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-3">  
-                    </div>
-                    <div class="cta-btn mt-3">
-                        <a class="home-btn mt-2 mb-3" href="">Xem thêm</a>
-                    </div>
-                    
-                </div>
-            </section>
-            <!-- Phần Flash Sale -->
-            <section id="home-flashsale">
-                <div class="container">
-                    <div class="title">Flash sale</div>
-                    <div class="my-carousel-container">
-                        <div class="flashsale-product-list my-carousel-inner">
-                            <div class="track row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-                            </div>
-                        </div>
-                        <div class="slide-controls d-flex">
-                            <button class="pre-btn">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="next-btn">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="cta-btn mt-3">
-                        <a class="home-btn mt-2 mb-3" href="">Xem thêm</a>
-                    </div> 
-                </div>
-            </section>
-            <!-- Phần Combo tiết kiệm -->
-            <section id="home-product-deal">
-                <div class="container">
-                    <div class="title-bar">
-                        <div class="title">COMBO TIẾT KIỆM</div>
-                    </div>
-                    <div class="my-carousel-container">
-                        <div class="product-deal-list my-carousel-inner">
-                            <div class="row track">
-                            </div>
-                        </div>
-                        <div class="slide-controls d-flex">
-                            <button class="pre-btn">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="next-btn">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="cta-btn">
-                        <a class="home-btn mt-2 mb-3" href="">Xem thêm</a>
-                    </div>
-                </div>
-            </section>
-            <!-- Phần Bảng tin -->
-            <section id="home-blog">
-                <div class="container">
-                    <div class="title-bar">
-                        <div class="title">BẢN TIN BEYOURs</div>
-                    </div>
-                    <div class="my-carousel-container">
-                        <div class="blog-list my-carousel-inner">
-                            <div class="row track">                                             
-                            </div>
-                        </div>
-                        <div class="slide-controls d-flex">
-                            <button class="pre-btn">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="next-btn">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="cta-btn">
-                        <a class="home-btn mt-2 mb-3" href="">Xem tất cả</a>
-                    </div>
-                </div>
-            </section>
-            <section id="home-policy">
-                <div class="container">
-                    <div class="policy-list hide-on-mobile">
-                        <div class="row">
-                      
-                        </div>
-                    </div>
-                </div>
 
-            </section>
+                <div class="cart-page-intro">
+                    <div class="container">
+                        <h4 class="pt-3 m-0">Ghé qua cửa hàng để lựa chọn những sản phẩm mới nhất của chúng tôi</h4>
+                        <div class="cart-overview pt-3 pb-3">
+                            <i class="cart-overview-icon fa-solid fa-house me-2"></i>
+                            <span class="cart-overview-text">Giỏ hàng: 2 sản phẩm - 22,185,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-page-content">
+                    <div class="container">
+                        <div class="cart-empty-form mt-3">
+                            <h4>GIỎ HÀNG</h4>
+                            <p class="mb-2">Giỏ hàng trống</p>
+                            <p>Tiếp tục mua hàng 
+                                <a href="">tại đây</a>
+                            </p>
+                        </div>
+                        <div class="cart-form pt-3 pb-3">
+                            <table class="cart-table">
+                                <thead class="cart-table-header">
+                                    <tr>
+                                        <th colspan="2">THÔNG TIN CHI TIẾT SẢN PHẨM</th>
+                                        <th>ĐƠN GIÁ</th>
+                                        <th class="text-center">SỐ LƯỢNG</th>
+                                        <th class="text-end">TỔNG GIÁ</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="cart-table-body">
+                                    <!-- <tr class="cart-table-row">
+                                        <td data-label="product-image">
+                                            <a href="" class="cart-item-img">
+                                                <img src="./asset/img/cart-sofa.jpg" alt="">
+                                            </a>
+                                        </td>
+                                        <td data-label="product-detail">
+                                            <a class="cart-product-name mt-0 mb-2" href="">Sofa bed INDIANA</a>
+                                            <p class="cart-product-description m-0">Vải bố / alb021 / 220cm</p>
+                                            <i class="cart-product-remove fa-solid fa-trash-can mt-2"></i>
+                                        </td>
+                                        <td data-label="product-unit-price" class="cart-product-price">12,000,000đ</td>
+                                        <td data-label="product-quantity">
+                                            <div class="cart-product-quantity-wrap d-flex">
+                                                <button class="quantity-minus-btn">-</button>
+                                                <span class="product-count-quantity">1</span>
+                                                <button class="quantity-add-btn">+</button>
+                                            </div>
+                                        </td>
+                                        <td data-label="product-total-price" class="cart-product-price">12,000,000đ</td>
+                                    </tr> -->
+                                    
+                                </tbody>
+                            </table>
+                            <div class="cart-checkout mt-3">
+                                <div class="row">
+                                    <div class="checkout-note col-12 col-md-8 col-xl-8">
+                                        <label for="CartSpecialInstructions">Ghi chú cho cửa hàng</label>
+                                        <textarea name="" id="CartSpecialInstructions" cols="30" rows="4"></textarea>
+                                    </div>
+                                    <div class="checkout-controls col-12 col-md-4 col-xl-4 d-flex">
+                                        <p>
+                                            <span class="cart-total-title">Tổng tiền</span>
+                                            <span class="cart-total"></span>
+                                        </p>
+                                        <button class="cart-form-checkout-btn"> 
+                                            <a href="./checkout.html">Thanh toán</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
         <footer class="footer">
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="row">
-                            <div class="footer-section col-md-3">
-                                <div class="footer-section-title">
-                                    <img src="//theme.hstatic.net/200000044142/1000773248/14/footer-logo.png?v=12034" alt="">
-                                    <span class="footer-mobile-arrow-down">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </div>
-                                <ul class="footer-section-detail p-0">
-                                    <li class="footer-section-item">
-                                        <a href="">Giới thiệu</a>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">Hệ thống cửa hàng</a>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">Tuyển dụng</a>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">Catalog</a>
-                                    </li>
-                                </ul>
-                                <div class="footer-section-logo">
-                                    <img src="./asset/img/logoSaleNoti-350x227.png" alt="">
-                                </div>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="footer-section col-md-3">
+                            <div class="footer-section-title">
+                                <img src="//theme.hstatic.net/200000044142/1000773248/14/footer-logo.png?v=12034" alt="">
+                                <span class="footer-mobile-arrow-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
                             </div>
-                            <div class="footer-section col-md-3">
-                                <div class="footer-section-title">
-                                    <p class="m-0 pb-3">HỖ TRỢ KHÁCH HÀNG</p>
-                                    <span class="footer-mobile-arrow-down">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </div>
-                                <ul class="footer-section-detail p-0">
-                                    <li class="footer-section-item">
-                                        <a href="">Bảo hành & Đổi trả</a>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">Chính sách giao hàng</a>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">Câu hỏi thường gặp</a>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">Chính sách bảo mật</a>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">Chính sách trả góp 0%</a>
-                                    </li>
-                                </ul>
+                            <ul class="footer-section-detail p-0">
+                                <li class="footer-section-item">
+                                    <a href="">Giới thiệu</a>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">Hệ thống cửa hàng</a>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">Tuyển dụng</a>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">Catalog</a>
+                                </li>
+                            </ul>
+                            <div class="footer-section-logo">
+                                <img src="./asset/img/logoSaleNoti-350x227.png" alt="">
                             </div>
-                            <div class="footer-section col-md-3">
-                                <div class="footer-section-title">
-                                    <p class="m-0 pb-3">liên hệ với chúng tôi</p>
-                                    <span class="footer-mobile-arrow-down">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </div>
-                                <ul class="footer-section-detail p-0">
-                                    <li class="footer-section-item">
-                                        <p class="m-0">Hotline CSKH (8h-12h)</p>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">1900 988 960</a>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <p class="m-0">(Ấn phím 2 để mua hàng)</p>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <a href="">beyours@beyours.vn</a>
-                                    </li>
-                                </ul>
-                                <div class="footer-section-logo d-flex">
-                                    <a href=""><i class="footer-section-logo-social fa-brands fa-facebook-f"></i></a>
-                                    <a href=""><i class="footer-section-logo-social fa-brands fa-instagram"></i></a>
-                                    <a href=""><i class="footer-section-logo-social fa-brands fa-pinterest-p"></i></a>
-                                    <a href=""><i class="footer-section-logo-social fa-brands fa-youtube"></i></a>
-                                    <a href=""><i class="footer-section-logo-social fa-brands fa-tiktok"></i></a>
-                                    <a href=""><i class="footer-section-logo-social fa-brands fa-twitter"></i></a>
-                                    
-                                </div>
-                            
+                        </div>
+                        <div class="footer-section col-md-3">
+                            <div class="footer-section-title">
+                                <p class="m-0 pb-3">HỖ TRỢ KHÁCH HÀNG</p>
+                                <span class="footer-mobile-arrow-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
                             </div>
-                            <div class="footer-section col-md-3">
-                                <div class="footer-section-title d-flex">
-                                    <p class="m-0 pb-3">CÔNG TY CỔ PHẦN THƯƠNG MẠI & XUẤT NHẬP KHẨU R.I.M</p>
-                                    <span class="footer-mobile-arrow-down">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </div>
-                                <ul class="footer-section-detail p-0">
-                                    <li class="footer-section-item">
-                                        <p class="m-0">Showroom trải nghiệm:</p>
-                                    </li>
-                                    <li class="footer-section-item">
-                                        <p class="m-0">BEYOURs Quận 7: B5 - B6 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</p>
-                                    </li>
-                                </ul>
-                            
+                            <ul class="footer-section-detail p-0">
+                                <li class="footer-section-item">
+                                    <a href="">Bảo hành & Đổi trả</a>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">Chính sách giao hàng</a>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">Câu hỏi thường gặp</a>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">Chính sách bảo mật</a>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">Chính sách trả góp 0%</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-section col-md-3">
+                            <div class="footer-section-title">
+                                <p class="m-0 pb-3">liên hệ với chúng tôi</p>
+                                <span class="footer-mobile-arrow-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
                             </div>
+                            <ul class="footer-section-detail p-0">
+                                <li class="footer-section-item">
+                                    <p class="m-0">Hotline CSKH (8h-12h)</p>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">1900 988 960</a>
+                                </li>
+                                <li class="footer-section-item">
+                                    <p class="m-0">(Ấn phím 2 để mua hàng)</p>
+                                </li>
+                                <li class="footer-section-item">
+                                    <a href="">beyours@beyours.vn</a>
+                                </li>
+                            </ul>
+                            <div class="footer-section-logo d-flex">
+                                <a href=""><i class="footer-section-logo-social fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="footer-section-logo-social fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="footer-section-logo-social fa-brands fa-pinterest-p"></i></a>
+                                <a href=""><i class="footer-section-logo-social fa-brands fa-youtube"></i></a>
+                                <a href=""><i class="footer-section-logo-social fa-brands fa-tiktok"></i></a>
+                                <a href=""><i class="footer-section-logo-social fa-brands fa-twitter"></i></a>
+                                
+                            </div>
+                        
+                        </div>
+                        <div class="footer-section col-md-3">
+                            <div class="footer-section-title d-flex">
+                                <p class="m-0 pb-3">CÔNG TY CỔ PHẦN THƯƠNG MẠI & XUẤT NHẬP KHẨU R.I.M</p>
+                                <span class="footer-mobile-arrow-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </div>
+                            <ul class="footer-section-detail p-0">
+                                <li class="footer-section-item">
+                                    <p class="m-0">Showroom trải nghiệm:</p>
+                                </li>
+                                <li class="footer-section-item">
+                                    <p class="m-0">BEYOURs Quận 7: B5 - B6 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</p>
+                                </li>
+                            </ul>
+                        
                         </div>
                     </div>
                 </div>
-        </footer>
+            </div>
+    </footer>
     </div>
-    <script src="./asset/JS/main.js"></script>
+    <script  src="./asset/JS/cart.js"></script>
     <script src="./asset/JS/mobile.js"></script>
-    <script src="./asset/JS/animation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
 </body>
 </html>
+

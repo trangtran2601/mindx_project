@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nội Thất BEYOURs - Thanh Toán Giỏ Hàng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+        
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/CSS/checkout-page.css">
+
+</head>
+
+<body>
+    <div id="checkout">
+        <div class="checkout-success-modal">
+            <div class="checkout-success-content">
+                <p>Cảm ơn bạn đã đặt hàng tại BEYOURs</p>
+                <p>Đơn hàng của bạn đã được ghi nhận. Nhân viên CSKH sẽ liên hệ bạn trong vòng 24h tới để xác nhận.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <div class="header-label">
+                    <a href="./index.html" class="header-label-heading">Nội Thất BEYOURs</a>
+                    <a href="./cart.html">Giỏ hàng</a>  
+                </div>
+                
+            </div>            
+            <div class="row checkout-content">           
+                <div class="customer-info-section col-12 col-lg-7">
+                    <div class="section-header">             
+                        <h4 class="section-title">Thông tin thanh toán </h4>
+                        <div class="content-text mb-3">Bạn đã có tài khoản? <a href="">Đăng nhập</a></div>
+                    </div>
+                    <div class="customer-info-content">
+                        <form action="" method="POST" class="form" id="personal-info">
+                                <div class="row">
+                                    <div class="col-12 form-group">
+                                        <input id="name" focus="name" type="text" placeholder="Họ và tên" class="form-control" name="name">
+                                        <span class="form-message"></span>
+                                    </div>        
+                                    <div class="col-12 col-md-8 form-group">
+                                        <input id="email" focus="email" type="email" placeholder="Email, vd: me@example.com" class="form-control" name="email">  
+                                        <span class="form-message"></span>
+                                    </div>        
+                                    <div class="col-12 col-md-4 form-group">
+                                        <input id="phone-number" type="tel" placeholder="Điện thoại" class="form-control" name="phone-number">  
+                                        <span class="form-message"></span>
+                                    </div>        
+                                    <div class="col-12 form-group">
+                                        <input id="address" focus="address" type="text" placeholder="Địa chỉ" class="form-control" name="address">
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-container">   
+                                    <div class="form-group ">   
+                                        <select class="form-select form-control" name="province" id="province" size="1" >     
+                                        </select>
+                                        <span class="form-message"></span>
+                                    </div>  
+                                    <div class="form-group">
+                                        <select class="form-select form-control" name="district" id="district" size="1" disabled>
+                                            <option value="" selected="selected">Choose district</option>
+                                        </select>
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-select form-control" name="ward" id="ward" size="1" disabled>
+                                            <option value="" selected="selected">Choose ward</option>
+                                        </select>
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                                <div id="payment-method-section">
+                                    <h4 class="section-title">Phương thức thanh toán</h4>
+                                    <ul class="payment-method-list">
+                                        <li class="payment-method-item">
+                                            <div class="payment-method-option d-flex">
+                                                <input class="form-check-input" type="radio" name="payment-method" id="COD" checked value="COD"/>
+                                                <div class="payment-method-img">
+                                                    <img src="https://hstatic.net/0/0/global/design/seller/image/payment/cod.svg?v=4">
+                                                </div>
+                                                <label class="option-text" for="COD">Thanh toán khi nhận hàng (COD)</label>
+                                            </div>
+                                            <div class="payment-method-detail blank-slate active">
+                                                <p class="ms-3 mb-0"> Chính sách thanh toán:
+                                                    - Đối với đơn hàng có giá trị dưới 1.000.000đ: Quý khách vui lòng thanh toán khi nhận hàng.
+                                                    - Đối với đơn hàng có giá trị từ 1.000.000đ:
+                                                    + Tại nội thành TP.HCM: Quý khách thanh toán trước tối thiểu 50% giá trị đơn hàng và thanh toán phần còn lại khi nhận hàng.
+                                                    + Tại ngoại thành TP.HCM và các tỉnh: Quý khách thanh toán 100% giá trị đơn hàng trước khi BEYOURs giao hàng.
+                                                    BEYOURs xin trân trọng cảm ơn.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="payment-method-item">
+                                            <div class="payment-method-option d-flex">
+                                                <input class="form-check-input" type="radio" name="payment-method" id="bank-transfer" value="bank-transfer"/>
+                                                <div class="payment-method-img">
+                                                    <img src="https://hstatic.net/0/0/global/design/seller/image/payment/other.svg?v=4">
+                                                </div>
+                                                <label class="option-text" for="bank-transfer">Chuyển khoản qua ngân hàng</label>
+                                            </div>
+                                            <div class="payment-method-detail blank-slate text-center">
+                                                <p class="m-0">
+                                                    Nội dung chuyển khoản:
+                                                    SĐT_Mã đơn_Tên
+                                                    Thông tin chuyển khoản:
+                                                    MBBANK - CN Quận Phú Nhuận - TP.HCM
+                                                    Số tài khoản: 068068068
+                                                    Chủ tài khoản: CTY CP THUONG MAI & XUAT NHAP KHAU R.I.M
+                                                </p>
+                                               
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </div>
+                                <button id="form-submit" class="order-btn">Đặt hàng</button> 
+                        </form>       
+                        
+                           
+                        
+                      
+                        
+                    </div>
+                    
+                </div>
+                <div class="product-info-section col-12 col-lg-5">
+                    <div class="checkout">
+                        <table class="product-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="hidden">Hinh ảnh</th>
+                                    <th scope="col" class="hidden">Thông tin chi tiết sản phẩm</th>
+                                    <th scope="col" class="hidden">Số lượng</th>
+                                    <th scope="col" class="hidden">Đơn giá</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-checkout">
+                            </tbody>
+                        </table>
+                        <form action="" id="form-discount-add">
+                            <div class="form-discount-wrapper d-flex">
+                                <input type="text" class="form-discount-input" placeholder="Mã giảm giá">
+                                <button class="form-discount-add-btn">Sử dụng</button>
+                            </div>
+                        </form>
+                        <table class="total-checkout">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="hidden">Description</th>
+                                    <th scope="col" class="hidden">blank</th>
+                                    <th scope="col" class="hidden">blank</th>
+                                    <th scope="col" class="hidden">Giá</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <div id="finalize-fee">
+                                <div class="fee-wrapper">
+                                    <span class="inner-content">Phí vận chuyển</span>
+                                    <span class="text">Nhân viên sẽ liên hệ và báo phí vận chuyển</span>
+                                </div>
+                                <div class="fee-wrapper">
+                                    <span class="inner-content">Tổng tiền</span>
+                                    <span id="total-price"></span>
+                                </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Cart Render -->
+    <script src="./asset/JS/checkout.js"></script>
+   
+    
+    <!-- Dropdown box & API cho các tỉnh -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+        integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Link Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <!-- Form Validation -->
+    <script src="./asset/JS/form.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Validator({
+                form: '#personal-info',
+                formGroupSelector: ".form-group",
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isRequired('#name', 'Vui lòng nhập tên'),
+                    Validator.isEmail('#email'),
+                    Validator.isPhoneNumber('#phone-number'),
+                    Validator.isRequired('#address', 'Vui lòng nhập địa chỉ'),
+                    Validator.isRequired('#province', 'Vui lòng chọn tên tỉnh'),
+                    Validator.isRequired('#ward', 'Vui lòng chọn tên quận, huyện'),
+                    Validator.isRequired('#district', 'Vui lòng chọn tên phường, xã')
+                ],
+                onSubmit: function (data) {
+                    clearCart()
+                    modalToggle()                    
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
