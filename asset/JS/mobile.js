@@ -39,10 +39,12 @@ const headerMobileMenuBtn = document.querySelector('.header-mobile-menu')
 
 function showNavMobileOverlay(){
     NavMobileOverlay.classList.add('open')
+    document.querySelector("body").style.overflow = "hidden"
 }
 
 function hideNavMobileOverlay (){
     NavMobileOverlay.classList.remove('open')
+    document.querySelector("body").style.overflow = "auto"
 }
 
 headerMobileMenuBtn.addEventListener('click', showNavMobileOverlay)

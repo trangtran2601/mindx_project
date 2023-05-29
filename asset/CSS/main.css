@@ -20,6 +20,7 @@ body{
 
 .app{
     overflow: hidden;
+    position: relative;
 }
 
 a,
@@ -99,11 +100,31 @@ a:visited {
     left: -40px;
 }
 
+.scroll-to-top{
+
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 40px;
+height: 40px;
+font-size: 16px;
+background-color: #fff;
+color: var(--primary-color);
+line-height: 40px;
+filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.15));
+opacity: 0.7;
+border-radius: 50%;
+text-align: center;
+cursor: pointer;
+display: none;
+z-index: 20;
+}
+
 /* ----------------------Header---------------------------- */
 
 .header{
 background-color: #fff;
-position: fixed;
+position: fixed !important;
 top: 0;
 right: 0;
 left: 0;
@@ -1091,6 +1112,8 @@ display: -webkit-box;
         opacity: 1;
     }
 }
+
+
 
 .nav-mobile-overlay.open{
     display: block;
